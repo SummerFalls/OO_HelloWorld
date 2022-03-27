@@ -3,8 +3,8 @@
 	<volume>
 		<volume_type>pkg_ps4_app</volume_type>
 		<volume_id>PS4VOLUME</volume_id>
-		<volume_ts>2022-03-26 00:55:27</volume_ts>
-		<package content_id="IV0000-BREW00083_00-HELLOWORLD000000" passcode="00000000000000000000000000000000"
+		<volume_ts>2022-03-28 00:13:07</volume_ts>
+		<package content_id="IV0000-DAVE00027_00-HELLOWORLD000000" passcode="00000000000000000000000000000000"
 			storage_type="digital50" app_type="full" />
 		<chunk_info chunk_count="1" scenario_count="1">
 			<chunks>
@@ -21,11 +21,24 @@
 		<file targ_path="sce_sys/param.sfo" orig_path="sce_sys/param.sfo" />
 		<file targ_path="sce_sys/icon0.png" orig_path="sce_sys/icon0.png" />
 		<file targ_path="sce_sys/pic0.png" orig_path="sce_sys/pic0.png" />
-		<file targ_path="sce_sys/pic1.png" orig_path="sce_sys/pic1.png" />
 		<file targ_path="sce_module/libc.prx" orig_path="sce_module/libc.prx" />
 		<file targ_path="sce_module/libSceFios2.prx" orig_path="sce_module/libSceFios2.prx" />
 		<file targ_path="assets/audio/.gitkeep" orig_path="assets/audio/.gitkeep" />
 		<file targ_path="assets/fonts/.gitkeep" orig_path="assets/fonts/.gitkeep" />
+		<file targ_path="assets/fonts/Gontserrat-Regular.ttf" orig_path="assets/fonts/Gontserrat-Regular.ttf" />
+		<file targ_path="assets/fonts/NotoSans-Regular.ttf" orig_path="assets/fonts/NotoSans-Regular.ttf" />
+		<file targ_path="assets/fonts/NotoSansArabic-Regular.ttf" orig_path="assets/fonts/NotoSansArabic-Regular.ttf" />
+		<file targ_path="assets/fonts/NotoSansJP-Regular.ttf" orig_path="assets/fonts/NotoSansJP-Regular.ttf" />
+		<file targ_path="assets/fonts/NotoSansKR-Regular.ttf" orig_path="assets/fonts/NotoSansKR-Regular.ttf" />
+		<file targ_path="assets/fonts/NotoSansSC-Regular.ttf" orig_path="assets/fonts/NotoSansSC-Regular.ttf" />
+		<file targ_path="assets/fonts/NotoSansTC-Regular.ttf" orig_path="assets/fonts/NotoSansTC-Regular.ttf" />
+		<file targ_path="assets/fonts/NotoSansThai-Regular.ttf" orig_path="assets/fonts/NotoSansThai-Regular.ttf" />
+		<file targ_path="assets/fonts/Roboto-Regular.ttf" orig_path="assets/fonts/Roboto-Regular.ttf" />
+		<file targ_path="assets/fonts/segoeui.ttf" orig_path="assets/fonts/segoeui.ttf" />
+		<file targ_path="assets/fonts/segoeuib.ttf" orig_path="assets/fonts/segoeuib.ttf" />
+		<file targ_path="assets/fonts/segoeuil.ttf" orig_path="assets/fonts/segoeuil.ttf" />
+		<file targ_path="assets/fonts/segoeuisl.ttf" orig_path="assets/fonts/segoeuisl.ttf" />
+		<file targ_path="assets/fonts/seguiemj.ttf" orig_path="assets/fonts/seguiemj.ttf" />
 		<file targ_path="assets/images/.gitkeep" orig_path="assets/images/.gitkeep" />
 		<file targ_path="assets/misc/.gitkeep" orig_path="assets/misc/.gitkeep" />
 		<file targ_path="assets/videos/.gitkeep" orig_path="assets/videos/.gitkeep" />	</files>

@@ -3,7 +3,7 @@ Language: Cpp
 DisableFormat: false
 # BasedOnStyle: WebKit
 Standard: Latest
-ColumnLimit: 120
+ColumnLimit: 180
 UseTab: Never
 TabWidth: 4
 IndentWidth: 4
@@ -53,7 +53,7 @@ InsertTrailingCommas: Wrapped
 BitFieldColonSpacing: Both
 
 # Allman Custom
-BreakBeforeBraces: Allman
+BreakBeforeBraces: Custom
 
 # If BreakBeforeBraces is set to Custom,
 # use this to specify how each individual brace case should be handled. Otherwise, this is ignored.

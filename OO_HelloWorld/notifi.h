@@ -10,27 +10,30 @@
 extern "C" {
 #endif
 
+#include <orbis/libkernel.h>
 #include <stdarg.h>
 #include <stdio.h>
 #include <string.h>
-
-#include <orbis/libkernel.h>
 
 static void notifi(const char *p_Uri, const char *p_Format, ...)
 {
     OrbisNotificationRequest s_Request;
     memset(&s_Request, '\0', sizeof(s_Request));
 
-    s_Request.reqId = NotificationRequest;
-    s_Request.unk3 = 0;
+    s_Request.type            = OrbisNotificationRequestType::NotificationRequest;
+    s_Request.reqId           = OrbisNotificationRequestType::NotificationRequest;
+    s_Request.unk3            = 0;
     s_Request.useIconImageUri = 1;
-    s_Request.targetId = -1;
+    s_Request.targetId        = -1;
 
     // Maximum size to move is destination size - 1 to allow for null terminator
-    if (p_Uri != NULL && strnlen(p_Uri, sizeof(s_Request.iconUri)) + 1 > sizeof(s_Request.iconUri)) {
-    strncpy(s_Request.iconUri, p_Uri, strnlen(p_Uri, sizeof(s_Request.iconUri) - 1));
-    } else {
-    s_Request.useIconImageUri = 0;
+    if (p_Uri != NULL && strnlen(p_Uri, sizeof(s_Request.iconUri)) + 1 > sizeof(s_Request.iconUri))
+    {
+        strncpy(s_Request.iconUri, p_Uri, strnlen(p_Uri, sizeof(s_Request.iconUri) - 1));
+    }
+    else
+    {
+        s_Request.useIconImageUri = 0;
     }
 
     va_list p_Args;
@@ -39,7 +42,7 @@ static void notifi(const char *p_Uri, const char *p_Format, ...)
     vsnprintf(s_Request.message, sizeof(s_Request.message), p_Format, p_Args);
     va_end(p_Args);
 
-    sceKernelSendNotificationRequest(NotificationRequest, &s_Request, sizeof(s_Request), 0);
+    sceKernelSendNotificationRequest(OrbisNotificationRequestType::NotificationRequest, &s_Request, sizeof(s_Request), 0);
 }
 
 #ifdef __cplusplus

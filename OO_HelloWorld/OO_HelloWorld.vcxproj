@@ -40,7 +40,7 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <NMakeOutput>eboot.bin</NMakeOutput>
-    <NMakePreprocessorDefinitions>_DEBUG;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
+    <NMakePreprocessorDefinitions>_DEBUG;GRAPHICS_USES_FONT;$(NMakePreprocessorDefinitions)</NMakePreprocessorDefinitions>
     <NMakeBuildCommandLine>call build.bat $(IntDir) "$(TargetName)" "$(SolutionDir)"</NMakeBuildCommandLine>
     <NMakeReBuildCommandLine>del /s /q /f $(IntDir)\*.o
 del /s /q /f $(IntDir)\*.elf
@@ -59,8 +59,10 @@ del /s /q /f $(IntDir)\*.oelf</NMakeCleanCommandLine>
   <ItemDefinitionGroup>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="graphics.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="build.bat" />
+    <ClCompile Include="png.cpp" />
   </ItemGroup>
   <ItemGroup>
     <Image Include="sce_sys\icon0.png" />
@@ -74,6 +76,12 @@ del /s /q /f $(IntDir)\*.oelf</NMakeCleanCommandLine>
     <None Include="sce_module\libc.prx" />
     <None Include="sce_module\libSceFios2.prx" />
     <None Include="sce_sys\about\right.sprx" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="graphics.h" />
+    <ClInclude Include="log.h" />
+    <ClInclude Include="notifi.h" />
+    <ClInclude Include="png.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
